@@ -1,0 +1,1 @@
+A colour generator application
