@@ -34,7 +34,10 @@ button{
     border: #D1D5DB solid 1px;
     font-family: "Inter", serif;
     background-color: white;
-    
+    cursor: pointer;
+}
+button:hover{
+    background-color:  #e0e2e6;
 }
 
 #display{
