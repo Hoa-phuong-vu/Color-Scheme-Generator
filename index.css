@@ -1,0 +1,59 @@
+body{
+    margin: 0;
+    font-family: "Inter", serif;
+    
+}
+
+.picker{
+    display: flex;
+    justify-content: space-between;
+    width: 80vw;
+    height: auto;
+    margin: auto;
+    padding: 1rem;
+    
+}
+
+select{
+    width: 50vw;
+    height: 2.5rem;
+    border-radius: 6px;
+    border: #D1D5DB solid 1px;
+    font-family: "Inter", serif;
+    font-size: medium;
+}
+
+#seed-color{
+    height: auto;
+    width: 4rem;
+    border: #D1D5DB 1px;
+}
+
+button{
+    border-radius: 6px;
+    border: #D1D5DB solid 1px;
+    font-family: "Inter", serif;
+    background-color: white;
+    
+}
+
+#display{
+    display: flex;
+    width: 80vw;
+    margin: auto;
+    justify-content: space-evenly;
+    
+}
+
+h1{
+    margin: 0;
+    height: 45rem;
+    width: 16vw;
+}
+p{
+    margin: auto;
+    height: 3rem;
+    width: 16vw;
+    text-align: center;
+    padding-top: 2rem;
+}
