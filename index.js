@@ -4,7 +4,6 @@ const seed = document.getElementById('seed-color')
 
 document.getElementById('button').addEventListener('click', function(){
     let seed1 = seed.value.replace('#', '')
-    console.log(seed1)
     document.getElementById('display').innerHTML = '';
     fetch(" https://www.thecolorapi.com/scheme?" + new URLSearchParams({
         hex: seed1, 
@@ -19,11 +18,18 @@ document.getElementById('button').addEventListener('click', function(){
                     document.getElementById('display').innerHTML += `
                     <div id="block">
                         <h1 style="background-color:${color.hex.value};"></h1>
-                        <p>${color.hex.value}</p>
+                        <p onclick="copy('${color.hex.value}')">${color.hex.value}</p>
                     </div>`
                 }
                     
         })
-  
 })
 
+async function copy(color) {
+    try {
+        await navigator.clipboard.writeText(color);
+        alert('Content copied to clipboard');
+    } catch (err) {
+        console.error('Failed to copy: ', err);
+    }
+}
